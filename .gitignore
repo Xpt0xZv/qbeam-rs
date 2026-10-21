@@ -1,0 +1,16 @@
+# Rust
+target/
+
+# Python / Maturin
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+build/
+*.egg-info/
+
+# qbeam transient artifacts
+*.qbeam.part
+*.qbeam.meta
+
+.idea
