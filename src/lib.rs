@@ -578,6 +578,7 @@ pub fn build_pinned_client(
     let client = reqwest::Client::builder()
         .use_preconfigured_tls(tls_cfg)
         .default_headers(default_headers)
+        .no_proxy()
         .pool_max_idle_per_host(concurrency + 5)
         .http1_only()
         .tcp_nodelay(true)

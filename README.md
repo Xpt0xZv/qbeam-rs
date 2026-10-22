@@ -40,8 +40,8 @@ cargo run --release -- serve ./my_packages
 # Run this on Machine B:
 #   qbeam-rs pull 10.24.8.15:8443:9f8e2b4a1c3d7e0f:xK9mP2vL_8qW1zR4nB7jCw
 
-# Machine B (Receiver - default 15 concurrent workers)
-cargo run --release -- pull 10.24.8.15:8443:9f8e2b4a1c3d7e0f:xK9mP2vL_8qW1zR4nB7jCw 15
+# Machine B (Receiver - default 15 concurrent workers, optional -o output directory)
+cargo run --release -- pull 10.24.8.15:8000:9f8e2b4a1c3d7e0f:xK9mP2vL_8qW1zR4nB7jCw -o ./downloads -w 15
 ```
 
 ### 2. Python Package (`PyO3` + `Maturin`)
